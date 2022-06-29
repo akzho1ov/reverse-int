@@ -1,4 +1,6 @@
 module.exports = function reverse (n) {
-    return  Number(String(n).split('').reverse().join(''));
+    n = n + "";
+    return  Number( n.split("").reverse().join("");
+});
   
 }
