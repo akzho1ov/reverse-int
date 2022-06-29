@@ -1,6 +1,6 @@
 module.exports = function reverse (n) {
-    n = n + "";
-    return  Number( n.split("").reverse().join(""));
+      let r = n.toString().split('').reverse().join('');
+  return Math.sign(n) * parseInt(r);
 });
   
 }
