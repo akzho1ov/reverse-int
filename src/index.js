@@ -1,4 +1,11 @@
 module.exports = function reverse (n) {
    let result = n.toString().split("").reverse().join("");
-    return result;
+
+
+    if (result.endsWith("-")) {
+     result = '+' + result ;
+            return parseInt(result);
+    }else {
+        return parseInt(result)
+    }
 }
