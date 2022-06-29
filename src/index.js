@@ -1,11 +1,4 @@
 module.exports = function reverse (n) {
-     return (
-    parseFloat(
-      n
-        .toString()
-        .split('')
-        .reverse()
-        .join('')
-    ) * Math.sign(n)
-  )        
+   let result = n.toString().split("").reverse().join("");
+    return result;
 }
